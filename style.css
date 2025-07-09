@@ -10,16 +10,22 @@
 body {
   background-color: #d5e1ef;
   font-family: "Outfit", sans-serif;
+  display: grid;
+  grid-template-rows: 1fr auto; /* main takes space, attribution hugs content */
+  min-height: 100vh;
+  margin: 0;
 }
 
 .card {
   width: 320px;
-  margin-left: auto;
-  margin-right: auto;
   border-radius: 10px;
   background-color: white;
   padding: 16px;
   padding-bottom: 40px;
+  box-shadow: #1f314f50 5px 5px 15px;
+
+  align-self: center;
+  justify-self: center;
 }
 
 .card img {
